@@ -6,9 +6,11 @@ public class Limits {
     private int maximum;
 
     public Limits() {
+        super();
     }
 
     public Limits(int minimum, int maximum) {
+        super();
         this.minimum = minimum;
         this.maximum = maximum;
     }
