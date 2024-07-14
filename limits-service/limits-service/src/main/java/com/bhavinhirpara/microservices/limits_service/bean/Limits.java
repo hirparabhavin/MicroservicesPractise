@@ -1,5 +1,4 @@
 package com.bhavinhirpara.microservices.limits_service.bean;
-
 public class Limits {
 
     private int minimum;
