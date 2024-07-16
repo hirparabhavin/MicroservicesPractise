@@ -8,8 +8,8 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class ApiGatewayConfiguration {
 
-	@Bean
-	public RouteLocator gatewayRouter(RouteLocatorBuilder builder) {
+    @Bean
+    RouteLocator gatewayRouter(RouteLocatorBuilder builder) {
 		return builder.routes()
 				.route(p -> p.path("/get")
 						.filters(f -> f.addRequestHeader("MyHeader", "MyURI").addRequestParameter("Param", "MyValue"))
