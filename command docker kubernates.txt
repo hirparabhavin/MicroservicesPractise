@@ -1,0 +1,173 @@
+Here are one-line explanations for each command:
+
+1. `docker run -p 8080:8080 in28min/hello-world-rest-api:0.0.1.RELEASE`: Runs a Docker container with the specified image and maps port 8080 of the container to port 8080 of the host machine.
+
+2. `kubectl create deployment hello-world-rest-api --image=in28min/hello-world-rest-api:0.0.1.RELEASE`: Creates a Kubernetes deployment with the specified image.
+
+3. `kubectl expose deployment hello-world-rest-api --type=LoadBalancer --port=8080`: Exposes the deployment as a service of type LoadBalancer on port 8080.
+
+4. `kubectl scale deployment hello-world-rest-api --replicas=3`: Scales the deployment to 3 replicas.
+
+5. `kubectl delete pod hello-world-rest-api-58ff5dd898-62l9d`: Deletes the specified pod.
+
+6. `kubectl autoscale deployment hello-world-rest-api --max=10 --cpu-percent=70`: Autoscales the deployment with a maximum of 10 replicas based on CPU utilization.
+
+7. `kubectl edit deployment hello-world-rest-api #minReadySeconds: 15`: Edits the deployment and sets the `minReadySeconds` field to 15.
+
+8. `kubectl set image deployment hello-world-rest-api hello-world-rest-api=in28min/hello-world-rest-api:0.0.2.RELEASE`: Updates the image of the deployment to the specified version.
+
+9. `gcloud container clusters get-credentials in28minutes-cluster --zone us-central1-a --project solid-course-258105`: Retrieves the credentials for the specified GKE cluster.
+
+10. `kubectl create deployment hello-world-rest-api --image=in28min/hello-world-rest-api:0.0.1.RELEASE`: Creates a deployment with the specified image.
+
+11. `kubectl expose deployment hello-world-rest-api --type=LoadBalancer --port=8080`: Exposes the deployment as a service of type LoadBalancer on port 8080.
+
+12. `kubectl set image deployment hello-world-rest-api hello-world-rest-api=DUMMY_IMAGE:TEST`: Updates the image of the deployment to a dummy image for testing purposes.
+
+13. `kubectl get events --sort-by=.metadata.creationTimestamp`: Retrieves the events sorted by creation timestamp.
+
+14. `kubectl set image deployment hello-world-rest-api hello-world-rest-api=in28min/hello-world-rest-api:0.0.2.RELEASE`: Updates the image of the deployment to the specified version.
+
+15. `kubectl get events --sort-by=.metadata.creationTimestamp`: Retrieves the events sorted by creation timestamp.
+
+16. `kubectl get componentstatuses`: Retrieves the component statuses.
+
+17. `kubectl get pods --all-namespaces`: Retrieves the pods from all namespaces.
+
+18. `kubectl get events`: Retrieves the events.
+
+19. `kubectl get pods`: Retrieves the pods.
+
+20. `kubectl get replicaset`: Retrieves the replicasets.
+
+21. `kubectl get deployment`: Retrieves the deployments.
+
+22. `kubectl get service`: Retrieves the services.
+
+23. `kubectl get pods -o wide`: Retrieves the pods with wide output format.
+
+24. `kubectl explain pods`: Explains the pods resource.
+
+25. `kubectl get pods -o wide`: Retrieves the pods with wide output format.
+
+26. `kubectl describe pod hello-world-rest-api-58ff5dd898-9trh2`: Describes the specified pod.
+
+27. `kubectl get replicasets`: Retrieves the replicasets.
+
+28. `kubectl get replicaset`: Retrieves the replicasets.
+
+29. `kubectl scale deployment hello-world-rest-api --replicas=3`: Scales the deployment to 3 replicas.
+
+30. `kubectl get pods`: Retrieves the pods.
+
+31. `kubectl get replicaset`: Retrieves the replicasets.
+
+32. `kubectl get events`: Retrieves the events.
+
+33. `kubectl get events --sort.by=.metadata.creationTimestamp`: Retrieves the events sorted by creation timestamp.
+
+34. `kubectl get rs`: Retrieves the replicasets.
+
+35. `kubectl get rs -o wide`: Retrieves the replicasets with wide output format.
+
+36. `kubectl set image deployment hello-world-rest-api hello-world-rest-api=DUMMY_IMAGE:TEST`: Updates the image of the deployment to a dummy image for testing purposes.
+
+37. `kubectl get rs -o wide`: Retrieves the replicasets with wide output format.
+
+38. `kubectl get pods`: Retrieves the pods.
+
+39. `kubectl describe pod hello-world-rest-api-85995ddd5c-msjsm`: Describes the specified pod.
+
+40. `kubectl get events --sort-by=.metadata.creationTimestamp`: Retrieves the events sorted by creation timestamp.
+
+41. `kubectl set image deployment hello-world-rest-api hello-world-rest-api=in28min/hello-world-rest-api:0.0.2.RELEASE`: Updates the image of the deployment to the specified version.
+
+42. `kubectl get events --sort-by=.metadata.creationTimestamp`: Retrieves the events sorted by creation timestamp.
+
+43. `kubectl get pods -o wide`: Retrieves the pods with wide output format.
+
+44. `kubectl delete pod hello-world-rest-api-67c79fd44f-n6c7l`: Deletes the specified pod.
+
+45. `kubectl get pods -o wide`: Retrieves the pods with wide output format.
+
+46. `kubectl delete pod hello-world-rest-api-67c79fd44f-8bhdt`: Deletes the specified pod.
+
+47. `gcloud container clusters get-credentials in28minutes-cluster --zone us-central1-c --project solid-course-258105`: Retrieves the credentials for the specified GKE cluster.
+
+48. `docker login`: Logs in to the Docker registry.
+
+49. `docker push in28min/mmv3-currency-exchange-service:0.0.11-SNAPSHOT`: Pushes the specified Docker image to the registry.
+
+50. `docker push in28min/mmv3-currency-conversion-service:0.0.11-SNAPSHOT`: Pushes the specified Docker image to the registry.
+
+51. `kubectl create deployment currency-exchange --image=in28min/mmv3-currency-exchange-service:0.0.11-SNAPSHOT`: Creates a deployment with the specified image.
+
+52. `kubectl expose deployment currency-exchange --type=LoadBalancer --port=8000`: Exposes the deployment as a service of type LoadBalancer on port 8000.
+
+53. `kubectl get svc`: Retrieves the services.
+
+54. `kubectl get services`: Retrieves the services.
+
+55. `kubectl get pods`: Retrieves the pods.
+
+56. `kubectl get po`: Retrieves the pods.
+
+57. `kubectl get replicaset`: Retrieves the replicasets.
+
+58. `kubectl get rs`: Retrieves the replicasets.
+
+59. `kubectl get all`: Retrieves all resources.
+
+60. `kubectl create deployment currency-conversion --image=in28min/mmv3-currency-conversion-service:0.0.11-SNAPSHOT`: Creates a deployment with the specified image.
+
+61. `kubectl expose deployment currency-conversion --type=LoadBalancer --port=8100`: Exposes the deployment as a service of type LoadBalancer on port 8100.
+
+62. `kubectl get svc --watch`: Retrieves the services and watches for changes.
+
+63. `kubectl get deployments`: Retrieves the deployments.
+
+64. `kubectl get deployment currency-exchange -o yaml >> deployment.yaml`: Retrieves the deployment and saves it to a YAML file.
+
+65. `kubectl get service currency-exchange -o yaml >> service.yaml`: Retrieves the service and saves it to a YAML file.
+
+66. `kubectl diff -f deployment.yaml`: Diffs the deployment YAML file.
+
+67. `kubectl apply -f deployment.yaml`: Applies the deployment YAML file.
+
+68. `kubectl delete all -l app=currency-exchange`: Deletes all resources with the specified label.
+
+69. `kubectl delete all -l app=currency-conversion`: Deletes all resources with the specified label.
+
+70. `kubectl rollout history deployment currency-conversion`: Retrieves the rollout history of the deployment.
+
+71. `kubectl rollout history deployment currency-exchange`: Retrieves the rollout history of the deployment.
+
+72. `kubectl rollout undo deployment currency-exchange --to-revision=1`: Rolls back the deployment to the specified revision.
+
+73. `kubectl logs currency-exchange-9fc6f979b-2gmn8`: Retrieves the logs of the specified pod.
+
+74. `kubectl logs -f currency-exchange-9fc6f979b-2gmn8`: Retrieves the logs of the specified pod and follows.
+
+75. `kubectl autoscale deployment currency-exchange --min=1 --max=3 --cpu-percent=5`: Autoscales the deployment with the specified parameters.
+
+76. `kubectl get hpa`: Retrieves the horizontal pod autoscalers.
+
+77. `kubectl top pod`: Retrieves the top pods.
+
+78. `kubectl top nodes`: Retrieves the top nodes.
+
+79. `kubectl get hpa`: Retrieves the horizontal pod autoscalers.
+
+80. `kubectl delete hpa currency-exchange`: Deletes the specified horizontal pod autoscaler.
+
+81. `kubectl create configmap currency-conversion --from-literal=CURRENCY_EXCHANGE_URI=http://currency-exchange`: Creates a config map with the specified literal value.
+
+82. `kubectl get configmap`: Retrieves the config maps.
+
+83. `kubectl get configmap currency-conversion -o yaml >> configmap.yaml`: Retrieves the config map and saves it to a YAML file.
+
+84. `watch -n 0.1 curl http://34.66.241.150:8100/currency-conversion-feign/from/USD/to/INR/quantity/10`: Continuously curls the specified URL every 0.1 seconds.
+
+85. `docker push in28min/mmv3-currency-conversion-service:0.0.12-SNAPSHOT`: Pushes the specified Docker image to the registry.
+
+86. `docker push in28min/mmv3-currency-exchange-service:0.0.12-SNAPSHOT`: Pushes the specified Docker image to the registry.
